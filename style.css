@@ -1,0 +1,243 @@
+body {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 80%; 
+}
+
+/******************* ASIDE ********************/
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    background-color: lightblue;
+}
+
+img {
+    max-width: 80%;
+    border-radius: 100%;
+    margin: 20% 10% 20% 10%;
+
+}
+
+#profil {
+    width: 100%;
+}
+
+#profil h2{
+    background-color: darkslategrey;
+    text-transform: uppercase;
+    text-align: center;
+    color: lightblue;
+    margin: 0;
+}
+
+#profil article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+#profil article:nth-child(2) {
+    padding-bottom: 30vh;
+    line-height: 1.5em;
+}
+
+#profil article:nth-child(4) {
+    padding-bottom: 30vh;
+    line-height: 1.5em;
+}
+
+#hobbies ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 20%;
+    padding: 0;
+    
+}
+
+#hobbies i {
+    display: flex;
+    padding: 15px;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+/********************** MAIN ******************/
+main {
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+main h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid lightskyblue;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main ul li:before {
+    content: "\2022";
+    margin-right: 5px;
+    color: lightskyblue;
+}
+
+.content p{
+    text-align: justify;
+    margin: 0 50px 20px 0;
+}
+
+.content h3 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.content h4 {
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+ /********** TITRE ************/
+#title {
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 100px;
+}
+
+#title h2 {
+    border: none;
+}
+
+.deco {
+    color: lightskyblue;
+}
+
+.underline {
+    text-decoration: underline lightskyblue;
+}
+
+/********** FORMATION ************/
+#experience, #graduate {
+    padding-bottom: 5px;
+}
+
+.student {
+    text-align: left;
+    margin-left: 60px;
+}
+
+#graduate article{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 40px;
+}
+
+#graduate article ul {
+    width: 40%;
+}
+
+.content {
+    width: 60%;
+}
+
+/************** EXP ***********/
+#experience article{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 40px;
+}
+
+#experience article ul {
+    width: 40%;
+}
+
+#recommande {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+#recommande div{
+    display: flex;
+    justify-content: space-around;
+}
+
+ /************** Version Tablette ************/
+ @media screen and (max-width: 1024px){
+
+    body {
+        width: 100%;
+    }
+
+    aside {
+         width: 60%;
+    }
+
+    #profil article:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+   #profil article:nth-child(4) {
+        padding-bottom: 10vh;
+        line-height: 1.5em;
+    }
+
+    #profil article:last-child i {
+        margin-top: 80px;
+        padding: 5px;
+        font-size: 30px;
+        border: 2px solid black;
+        border-radius: 100%;
+    }
+
+    #recommande div{
+        margin-bottom: 15px;
+        margin-left: 40px;
+    }
+ }
+
+ /************ Version mobile ****************/
+ @media screen and (max-width: 768px){
+
+    aside {
+        margin: 0;
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #container article{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        width: 80%;
+    }
+
+    #recommande div {
+        flex-wrap: wrap;
+    }
+ }
